@@ -30,6 +30,8 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 ro.surface_flinger.wcg_composition_dataspace=143261696
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
+debug.sf.enable_hwc_vds=1 
+debug.hwui.renderer=skiavk
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
