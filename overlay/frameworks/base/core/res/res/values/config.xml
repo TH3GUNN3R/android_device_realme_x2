@@ -1183,4 +1183,6 @@
     <!-- Whether device has a notch -->
     <bool name="config_haveNotch">true</bool>
 
+    <!-- Whether to show a custom view for FOD --> 
+    <bool name="config_needCustomFODView">true</bool>
 </resources>
