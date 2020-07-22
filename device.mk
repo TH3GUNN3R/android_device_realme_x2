@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
     android.hardware.contexthub@1.0-service
 
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
@@ -387,6 +388,7 @@ PRODUCT_PACKAGES += \
     init.oppo.vendor.motor.rc \
     init.oppo.vendor.steppermotor.rc \
     init.qcom.rc \
+    init.artemis.rc \
     init.qcom.usb.rc \
     init.safailnet.rc \
     init.target.rc \
