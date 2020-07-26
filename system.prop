@@ -74,3 +74,18 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
    debug.sf.early_app_phase_offset_ns=500000 \
    debug.sf.early_gl_phase_offset_ns=3000000 \
    debug.sf.early_gl_app_phase_offset_ns=15000000
+
+ #LMK
+ ro.config.low_ram=false \
+ ro.lmk.low=1001 \
+ ro.lmk.medium=800 \
+ ro.lmk.critical=0 \
+
+ ro.lmk.critical_upgrade=false \
+
+ ro.lmk.upgrade_pressure=100 \
+ ro.lmk.downgrade_pressure=100 \
+ ro.lmk.kill_heaviest_task=true \
+ ro.lmk.kill_timeout_ms=100 \
+ ro.lmk.use_minfree_levels=true \
+ ro.lmk.log_stats=true
