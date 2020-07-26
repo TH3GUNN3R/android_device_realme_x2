@@ -12,5 +12,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="pickup_sensor" translatable="false">realme.sensor.pickup</string>
+    <string name="pickup_sensor" translatable="false">qti.sensor.amd</string>
 </resources>
