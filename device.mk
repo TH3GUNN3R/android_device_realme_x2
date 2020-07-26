@@ -480,3 +480,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+#crDroid Specific
+TARGET_HAS_FOD := true
+EXTRA_FOD_ANIMATIONS := true
