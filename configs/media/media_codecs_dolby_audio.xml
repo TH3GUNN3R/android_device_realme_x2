@@ -53,5 +53,17 @@
             <Limit name="bitrate" range="16000-2688000" />
         </MediaCodec>
         <!-- DOLBY_AC4 END -->
-    </Decoders>
+        <!-- DOLBY_UDC -->
+        <MediaCodec name="OMX.dolby.ac3.decoder" type="audio/ac3">
+            <Limit name="channel-count" max="6" />
+            <Limit name="sample-rate" ranges="32000,44100,48000" />
+            <Limit name="bitrate" range="32000-640000" />
+        </MediaCodec>
+        <MediaCodec name="OMX.dolby.eac3.decoder" type="audio/eac3">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="32000,44100,48000" />
+            <Limit name="bitrate" range="32000-6144000" />
+        </MediaCodec>
+        <!-- DOLBY_UDC END -->
+   </Decoders>
 </Included>
