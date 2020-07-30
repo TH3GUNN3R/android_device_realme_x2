@@ -205,6 +205,7 @@ TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble
 VENDOR_SECURITY_PATCH := 2020-01-05

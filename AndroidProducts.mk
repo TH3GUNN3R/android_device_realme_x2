@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_x2.mk
+    $(LOCAL_DIR)/havoc_x2.mk
+
+COMMON_LUNCH_CHOICES := \
+       havoc_x2-userdebug \
+       havoc_x2-user \
+       havoc_x2-eng 
