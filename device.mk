@@ -440,3 +440,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Paranoid Doze
+PRODUCT_PACKAGES += ParanoidDoze
