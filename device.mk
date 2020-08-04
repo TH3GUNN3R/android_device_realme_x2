@@ -22,7 +22,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-pa
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -173,7 +173,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.x2 \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.x2 \
+    vendor.pa.biometrics.fingerprint.inscreen@1.0-service.x2 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Fingerprint
@@ -247,10 +247,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.x2 \
     lights.sm6150
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -306,10 +302,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/nxp/opensource/sn100x
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.x2
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -401,11 +393,7 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    qti_telephony_utils.xml 
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -416,10 +404,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.sm6150
-
-# Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.x2
 
 # USB
 PRODUCT_PACKAGES += \
@@ -455,7 +439,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-    
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
