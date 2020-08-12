@@ -68,8 +68,11 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    devicesettings \
-    RealmeDoze
+    devicesettings 
+
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
 
 # Fingerprint
 PRODUCT_PACKAGES += \
