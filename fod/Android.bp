@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.x2",
-    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.x2.rc"],
+    name: "pa.biometrics.fingerprint.inscreen@1.0-service.x2",
+    init_rc: ["pa.biometrics.fingerprint.inscreen@1.0-service.x2.rc"],
     srcs: [
 	"service.cpp",
         "FingerprintInscreen.cpp",
@@ -30,7 +30,7 @@ cc_binary {
         "liblog",
         "libhwbinder",
         "libutils",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "vendor.pa.biometrics.fingerprint.inscreen@1.0",
     ],
 }
 
