@@ -141,7 +141,7 @@ void set_interactive(struct power_module* module, int on) {
 void set_feature(struct power_module* module, feature_t feature, int state) {
     switch (feature) {
 #ifdef TAP_TO_WAKE_NODE
-        case POWER_FEATURE_DOUBLE_TAP_TO_WAKE: {
+        case POWER_FEATURE_DOUBLE_TAP: {
             int fd = open(TAP_TO_WAKE_NODE, O_RDWR);
             struct input_event ev;
             ev.type = EV_SYN;
