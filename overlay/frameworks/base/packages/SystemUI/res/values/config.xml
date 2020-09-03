@@ -25,16 +25,17 @@
     <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
 
     <!-- Doze: does this device support STATE_DOZE?  -->
-    <bool name="doze_display_state_supported">false</bool>
-    
+    <bool name="doze_display_state_supported">true</bool>
+
     <!-- Allow devices override audio panel location to the left side -->
     <bool name="config_audioPanelOnLeftSide">true</bool>
 
-    <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
-    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>    
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 
-    <!-- Color of the FOD view -->
-    <color name="config_fodColor">#00f8d0b8</color>
+    <!-- Whether to show biometric help only when failed -->
+    <bool name="config_biometricHelpShowOnlyWhenFailed">true</bool>
 
     <!-- Whether SystemUI ignores notch -->
     <bool name="hide_view_behind_notch">true</bool>
